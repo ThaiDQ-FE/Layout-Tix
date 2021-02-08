@@ -1,0 +1,345 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  text-align: left;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div,
+input,
+button {
+  outline: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a:focus,
+li:focus {
+  outline: none;
+}
+
+.login-container {
+  margin-top: 60px;
+}
+
+.login-container .login-item {
+  width: 100vw;
+  height: 100vh;
+  margin-top: -60px;
+  background-image: url(../../../image/bg2.jpg);
+  background-size: contain;
+  background-position: center;
+}
+
+.login-container .login-item .login-warapper {
+  max-width: 360px;
+  padding: 40px 32px 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 50, 93, 0.9)), to(rgba(8, 22, 48, 0.9)));
+  background-image: linear-gradient(to bottom, rgba(20, 50, 93, 0.9), rgba(8, 22, 48, 0.9));
+  text-align: center;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.45);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.45);
+  color: #fff;
+  border-radius: 6px;
+}
+
+.login-container .login-item .login-warapper .login-logo {
+  width: 209px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.login-container .login-item .login-warapper .login-text {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.login-container .login-item .login-warapper .login-social .login-facebook,
+.login-container .login-item .login-warapper .login-social .login-zalo,
+.login-container .login-item .login-warapper .login-social .login-google {
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+  padding: 0 10px;
+}
+
+.login-container .login-item .login-warapper .login-social .login-facebook a,
+.login-container .login-item .login-warapper .login-social .login-zalo a,
+.login-container .login-item .login-warapper .login-social .login-google a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.login-container .login-item .login-warapper .login-social .login-facebook a img,
+.login-container .login-item .login-warapper .login-social .login-zalo a img,
+.login-container .login-item .login-warapper .login-social .login-google a img {
+  width: 100%;
+}
+
+.login-container .login-item .login-warapper .login-close {
+  opacity: 1;
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #081630;
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+  content: "";
+  cursor: pointer;
+}
+
+.login-container .login-item .login-warapper .login-close:hover {
+  -webkit-filter: brightness(0.96);
+  filter: brightness(0.96);
+}
+
+.login-container .login-item .login-warapper .login-close::before {
+  content: "";
+  display: block;
+  border-left: 2px solid #455570;
+  width: 2px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.login-container .login-item .login-warapper .login-close::after {
+  content: "";
+  display: block;
+  border-left: 2px solid #455570;
+  width: 2px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.login-container .login-item .login-warapper .login-form-container {
+  width: 100%;
+  height: 60%;
+}
+
+.login-container .login-item .login-warapper .login-form-container .login-input-taikhoan .login-label-taikhoan {
+  -webkit-transform: translate(14px, -6px) scale(0.75);
+          transform: translate(14px, -6px) scale(0.75);
+}
+
+.login-container .login-item .login-warapper .login-form-container .login-input-matkhau .login-label-matkhau {
+  -webkit-transform: translate(14px, -6px) scale(0.75);
+          transform: translate(14px, -6px) scale(0.75);
+}
+
+.login {
+  margin: 0 auto;
+  padding: 0 calc(50% - 430px);
+}
+
+.login-tks {
+  width: 100%;
+  height: 80%;
+  margin-bottom: 2px;
+}
+
+.login-controller-tk {
+  border: 0;
+  margin: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  position: relative;
+  min-width: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  vertical-align: top;
+}
+
+.login-controller-tk:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.login-tk label {
+  color: #2196f4;
+}
+
+.login-label-outline {
+  z-index: 1;
+  -webkit-transform: translate(14px, 20px) scale(1);
+  transform: translate(14px, 20px) scale(1);
+  pointer-events: none;
+}
+
+.login-label-animated {
+  -webkit-transition: color 200ms cubic-bezier(0, 0, 0.2, 1) 0ms, -webkit-transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  transition: color 200ms cubic-bezier(0, 0, 0.2, 1) 0ms, -webkit-transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  transition: color 200ms cubic-bezier(0, 0, 0.2, 1) 0ms, transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  transition: color 200ms cubic-bezier(0, 0, 0.2, 1) 0ms, transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms, -webkit-transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+.login-form-controller-label {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.login-form-label {
+  color: rgba(0, 0, 0, 0.54);
+  padding: 0;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.00938em;
+}
+
+.login-input-label {
+  display: block;
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+}
+
+.login-tk #login-tk-input {
+  padding-right: 0;
+}
+
+.login-input-outline {
+  position: relative;
+  border-radius: 4px;
+}
+
+.login-input-base {
+  color: rgba(0, 0, 0, 0.87);
+  cursor: text;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  font-size: 1rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 400;
+  line-height: 1.1876em;
+  letter-spacing: 0.00938em;
+}
+
+.login-tk input,
+.login-tk fieldset {
+  color: #2196f4;
+  border-color: #2196f4;
+  border-width: 4px;
+}
+
+.login-input-outline-input {
+  padding: 18.5px 14px !important;
+}
+
+.login-input-base-input {
+  font: inherit;
+  color: currentColor;
+  width: 100%;
+  border: 0;
+  height: 1.1876em;
+  margin: 0;
+  display: block;
+  padding: 6px 0 7px;
+  min-width: 0;
+  background: none;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-animation-name: mui-auto-fill-cancel;
+  animation-name: mui-auto-fill-cancel;
+  letter-spacing: inherit;
+  -webkit-animation-duration: 10ms;
+  animation-duration: 10ms;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.login-tk-field {
+  top: -5px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0 8px;
+  overflow: hidden;
+  position: absolute;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.login-taikhoan-legend,
+.login-matkhau-legend {
+  max-width: 1000px !important;
+  -webkit-transition: max-width 100ms cubic-bezier(0, 0, 0.2, 1) 50ms !important;
+  transition: max-width 100ms cubic-bezier(0, 0, 0.2, 1) 50ms !important;
+}
+
+.login-tk-legend {
+  width: auto;
+  height: 11px;
+  display: block;
+  padding: 0;
+  font-size: 0.75em;
+  max-width: 0.01px;
+  text-align: left;
+  -webkit-transition: max-width 50ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  transition: max-width 50ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  visibility: hidden;
+}
+
+.login-tk-legend span {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+@media (min-width: 768px) {
+  .login-sm {
+    width: 33.333333%;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container .login-item .login-warapper {
+    max-width: none;
+    width: 100%;
+    height: 100%;
+  }
+  .login-container .login-item .login-warapper .login-close {
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+  }
+}
